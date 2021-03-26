@@ -1,0 +1,32 @@
+.header {
+  width: 100%;
+  padding: 1rem;
+  background-color: #001636;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  margin-right: 1rem;
+}
+.search {
+  display: flex;
+}
+.customInput {
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 0.75rem;
+  margin-right: 1rem;
+  width: 100%;
+}
+.customButton {
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  background-color: #002050;
+  color: white;
+  font-size: 16px;
+}
