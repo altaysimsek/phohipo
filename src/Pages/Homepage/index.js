@@ -16,12 +16,13 @@ function Homepage() {
     setLoading(true)
     axios
       .get(
-        `https://api.unsplash.com/photos/random?count=3&client_id=${process.env.REACT_APP_TOKEN}`
+        `https://api.unsplash.com/photos/random?count=15&client_id=${process.env.REACT_APP_TOKEN}`
       )
       .then((response) => {
         setImages(images.concat(...response.data))
         setLoading(false)
       })
+      .catch((err) => console.log(err))
   }
 
   return (
