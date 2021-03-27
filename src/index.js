@@ -1,11 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import App from './App'
+
+import { Header } from './components'
+import Router from './Router'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Header></Header>
+    <Router></Router>
   </React.StrictMode>,
   document.getElementById('root')
 )
