@@ -1,40 +1,55 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
+import InfiniteScroll from 'react-infinite-scroll-component'
 import './Homepage.css'
 
 function Homepage() {
   const [images, setImages] = useState([])
   const [loading, setLoading] = useState(false)
+
   useEffect(() => {
+    fetchPhotos()
+  }, [])
+
+  function fetchPhotos() {
     setLoading(true)
     axios
-      .get(`https://api.unsplash.com/photos?client_id=${process.env.REACT_APP_TOKEN}`)
+      .get(
+        `https://api.unsplash.com/photos/random?count=3&client_id=${process.env.REACT_APP_TOKEN}`
+      )
       .then((response) => {
-        console.log(response)
-        setImages(response.data)
+        setImages(images.concat(...response.data))
         setLoading(false)
       })
-  }, [])
+  }
 
   return (
     <div className="content">
-      <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
-        <Masonry>
-          {!loading ? (
-            images.map((image, index) => (
+      <InfiniteScroll
+        dataLength={images.length}
+        next={fetchPhotos}
+        hasMore={true}
+        loader={<h4>Loading...</h4>}
+        endMessage={
+          <p style={{ textAlign: 'center' }}>
+            <b>Yay! You have seen it all</b>
+          </p>
+        }
+      >
+        <ResponsiveMasonry columnsCount={3} gutter="10px">
+          <Masonry>
+            {images.map((image) => (
               <img
                 key={image.id}
                 src={image.urls.regular}
-                width="50%"
+                style={{ width: '100%', display: 'block' }}
                 alt={image.alt_description}
               ></img>
-            ))
-          ) : (
-            <p>Loading</p>
-          )}
-        </Masonry>
-      </ResponsiveMasonry>
+            ))}
+          </Masonry>
+        </ResponsiveMasonry>
+      </InfiniteScroll>
     </div>
   )
 }
