@@ -1,3 +1,9 @@
 .content {
-  padding: 1rem 25%;
+  padding: 1rem 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+img {
+  margin: 0.5rem;
 }
