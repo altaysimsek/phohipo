@@ -6,23 +6,23 @@ import './Homepage.css'
 
 function Homepage() {
   const [images, setImages] = useState([])
-  const [loading, setLoading] = useState(false)
 
-  useEffect(() => {
+  useEffect(function () {
     fetchPhotos()
+    // eslint-disable-next-line
   }, [])
 
-  function fetchPhotos() {
-    setLoading(true)
-    axios
-      .get(
-        `https://api.unsplash.com/photos/random?count=15&client_id=${process.env.REACT_APP_TOKEN}`
-      )
-      .then((response) => {
-        setImages(images.concat(...response.data))
-        setLoading(false)
-      })
-      .catch((err) => console.log(err))
+  const fetchPhotos = () => {
+    setTimeout(() => {
+      axios
+        .get(
+          `https://api.unsplash.com/photos/random?count=10&client_id=${process.env.REACT_APP_TOKEN}`
+        )
+        .then((response) => {
+          setImages(images.concat(...response.data))
+        })
+        .catch((err) => console.log(err))
+    }, 2500)
   }
 
   return (
