@@ -19,11 +19,17 @@ function Header() {
   }
   return (
     <div className="header">
-      <div className="logo">LOGO</div>
+      <div className="logo">
+        <img src="./logo.png" width="100px"></img>
+      </div>
       <div className="search">
-        <input className="customInput" onChange={(e) => setInputValue(e.target.value)}></input>
+        <input
+          className="customInput"
+          placeholder="Type your interest"
+          onChange={(e) => setInputValue(e.target.value)}
+        ></input>
         <select onChange={(e) => setOptionSelect(e.target.value)} className="customInput">
-          <option selected disabled hidden>
+          <option selected disabled value="null">
             Select a topic
           </option>
           {topics.map((item) => (
