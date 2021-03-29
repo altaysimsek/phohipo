@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   box-sizing: border-box;
-  background-color: #313a86;
+  background-color: white;
   color: white;
   font-size: 24px;
   display: flex;
@@ -26,17 +26,19 @@
 
 .navbarlist li ul {
   margin-right: 2rem;
-  color: rgb(242, 242, 242);
+  color: #E11D39;
 }
 .navbarlist li ul a {
   text-decoration: none;
-  color: rgb(242, 242, 242);
+  font-weight:700;
+  color: #E11D39;
+  transition: all ease 0.1s;
 }
 .navbarlist li ul a:visited {
   text-decoration: none;
-  color: rgb(242, 242, 242);
+  color: #E11D39;
 }
 .navbarlist li ul a:hover {
-  color: white;
+  color: black;
   cursor: pointer;
 }

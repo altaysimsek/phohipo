@@ -3,13 +3,3 @@
 
   color: rgba(0, 0, 0, 0.6);
 }
-
-img {
-  padding: 0.5rem;
-  transition: all 0.18s;
-  border-radius: 16px;
-}
-img:hover {
-  transform: scale(1.02);
-  cursor: pointer;
-}

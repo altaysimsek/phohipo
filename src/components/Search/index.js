@@ -22,7 +22,7 @@ function Search() {
   return (
     <div className="search">
       <select className="customSelect" onChange={(e) => setOptionSelect(e.target.value)}>
-        <option selected disabled value="null">
+        <option default  value="null">
           Select a topic
         </option>
         {topics.map((item) => (

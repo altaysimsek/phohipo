@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
 import InfiniteScroll from 'react-infinite-scroll-component'
+import { ImageCard } from '../../components'
 import 'boxicons'
 import './Discover.css'
 
@@ -43,12 +44,7 @@ function Homepage() {
           <ResponsiveMasonry columnsCount={3} gutter="10px">
             <Masonry>
               {images.map((image) => (
-                <img
-                  key={image.id}
-                  src={image.urls.regular}
-                  style={{ width: '100%', display: 'block' }}
-                  alt={image.alt_description}
-                ></img>
+                <ImageCard key={image.id} imageData={image}></ImageCard>
               ))}
             </Masonry>
           </ResponsiveMasonry>

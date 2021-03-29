@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(240, 240, 240);
   border-radius: 16px;
 }
 .customInput {
@@ -12,14 +12,14 @@
   border: none;
   outline: none;
   margin-right: 1rem;
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(240, 240, 240);
 }
 .icon {
   cursor: pointer;
 }
 .customSelect {
   font-size: 14px;
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(240, 240, 240);
   margin-right: 2rem;
   font-weight: 600;
   border: none;
