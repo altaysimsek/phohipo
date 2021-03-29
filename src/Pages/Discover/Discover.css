@@ -1,6 +1,9 @@
 .content {
   padding: 1rem 10%;
+
+  color: rgba(0, 0, 0, 0.6);
 }
+
 img {
   padding: 0.5rem;
   transition: all 0.18s;

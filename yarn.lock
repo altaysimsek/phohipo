@@ -2505,6 +2505,11 @@
     "@webassemblyjs/wast-parser" "1.9.0"
     "@xtuc/long" "4.2.2"
 
+"@webcomponents/webcomponentsjs@^2.0.2":
+  "integrity" "sha512-C0l51MWQZ9kLzcxOZtniOMohpIFdCLZum7/TEHv3XWFc1Fvt5HCpbSX84x8ltka/JuNKcuiDnxXFkiB2gaePcg=="
+  "resolved" "https://registry.npmjs.org/@webcomponents/webcomponentsjs/-/webcomponentsjs-2.5.0.tgz"
+  "version" "2.5.0"
+
 "@xtuc/ieee754@^1.2.0":
   "integrity" "sha512-DX8nKgqcGwsc0eJSqYt5lwP4DH5FlHnmuWWBRy7X0NcaGR0ZtuyeESgMwTYVEtxmsNGY+qit4QYT/MIYTOTPeA=="
   "resolved" "https://registry.yarnpkg.com/@xtuc/ieee754/-/ieee754-1.2.0.tgz"
@@ -3296,6 +3301,18 @@
   "integrity" "sha1-aN/1++YMUes3cl6p4+0xDcwed24="
   "resolved" "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz"
   "version" "1.0.0"
+
+"boxicons@^2.0.7":
+  "integrity" "sha512-1K6IkeEkjWcdXT+XO3/ZUwNp5w3rYYRwvRqAMKh/6nzEP8JP/fHx/U7Ggce3fyDKfgBDgeG+Hj3iZrV8zpVhtw=="
+  "resolved" "https://registry.npmjs.org/boxicons/-/boxicons-2.0.7.tgz"
+  "version" "2.0.7"
+  dependencies:
+    "@webcomponents/webcomponentsjs" "^2.0.2"
+    "prop-types" "^15.6.0"
+    "react" "^16.0.0"
+    "react-dom" "^16.0.0"
+    "react-interactive" "^0.8.1"
+    "react-router-dom" "^4.2.2"
 
 "brace-expansion@^1.1.7":
   "integrity" "sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA=="
@@ -4631,6 +4648,21 @@
   "resolved" "https://registry.yarnpkg.com/destroy/-/destroy-1.0.4.tgz"
   "version" "1.0.4"
 
+"detect-hover@^1.0.3":
+  "integrity" "sha512-HtLoY+tClgYucJNiovNICGWFp9nOGVmHY44s7L62iPqORXM9vujeWFaVcqtA7XRvp/2Y+4RBUfHbDKFGN+xxZQ=="
+  "resolved" "https://registry.npmjs.org/detect-hover/-/detect-hover-1.0.3.tgz"
+  "version" "1.0.3"
+
+"detect-it@^3.0.3":
+  "integrity" "sha512-RxpgcdbatUX6epJE09K16iJqF7x6iEcEdoL18FR2zpBO4JhnL7aMOAUoUEyexdtbWOSfTmoDWmeD6mwRBQyRXg=="
+  "resolved" "https://registry.npmjs.org/detect-it/-/detect-it-3.0.7.tgz"
+  "version" "3.0.7"
+  dependencies:
+    "detect-hover" "^1.0.3"
+    "detect-passive-events" "^1.0.5"
+    "detect-pointer" "^1.0.3"
+    "detect-touch-events" "^2.0.2"
+
 "detect-newline@^3.0.0":
   "integrity" "sha512-TLz+x/vEXm/Y7P7wn1EJFNLxYpUD4TgMosxY6fAVJUnJMbupHBOncxyWUG9OpTaH9EBD7uFI5LfEgmMOc54DsA=="
   "resolved" "https://registry.yarnpkg.com/detect-newline/-/detect-newline-3.1.0.tgz"
@@ -4641,6 +4673,16 @@
   "resolved" "https://registry.yarnpkg.com/detect-node/-/detect-node-2.0.4.tgz"
   "version" "2.0.4"
 
+"detect-passive-events@^1.0.5":
+  "integrity" "sha512-foW7Q35wwOCxVzW0xLf5XeB5Fhe7oyRgvkBYdiP9IWgLMzjqUqTvsJv9ymuEWGjY6AoDXD3OC294+Z9iuOw0QA=="
+  "resolved" "https://registry.npmjs.org/detect-passive-events/-/detect-passive-events-1.0.5.tgz"
+  "version" "1.0.5"
+
+"detect-pointer@^1.0.3":
+  "integrity" "sha512-d0o/Puo3fiGSCXy6H039h9Kwz+mmYCGKZ/qtPFnpN3WfsumjC1C9b5KKvRu+aYnfdI8peqN/iAe7dPd85qIt2g=="
+  "resolved" "https://registry.npmjs.org/detect-pointer/-/detect-pointer-1.0.3.tgz"
+  "version" "1.0.3"
+
 "detect-port-alt@1.1.6":
   "integrity" "sha512-5tQykt+LqfJFBEYaDITx7S7cR7mJ/zQmLXZ2qt5w04ainYZw6tBf9dBunMjVeVOdYVRUzUOE4HkY5J7+uttb5Q=="
   "resolved" "https://registry.yarnpkg.com/detect-port-alt/-/detect-port-alt-1.1.6.tgz"
@@ -4648,6 +4690,11 @@
   dependencies:
     "address" "^1.0.1"
     "debug" "^2.6.0"
+
+"detect-touch-events@^2.0.2":
+  "integrity" "sha512-g8GWBkJLiIDRJfRXEdrd1wMXpNyGId2DkbfuwFahSb4OCvn717hyRJtAcEDISfp3zkwEhZ4Y4woHPA6DeyB3Fw=="
+  "resolved" "https://registry.npmjs.org/detect-touch-events/-/detect-touch-events-2.0.2.tgz"
+  "version" "2.0.2"
 
 "diff-sequences@^26.6.2":
   "integrity" "sha512-Mv/TDa3nZ9sbc5soK+OoA74BsS3mL37yixCvUAQkiuA4Wz6YtwP/K47n2rv2ovzHZvoiQeA5FTQOschKkEwB0Q=="
@@ -6158,7 +6205,7 @@
   "resolved" "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz"
   "version" "1.1.0"
 
-"history@^4.9.0":
+"history@^4.7.2", "history@^4.9.0":
   "integrity" "sha512-36nwAD620w12kuzPAsyINPWJqlNbij+hpK1k9XRloDtym8mxzGYl2c17LnV6IAGB2Dmg4tEa7G7DlawS0+qjew=="
   "resolved" "https://registry.npmjs.org/history/-/history-4.10.1.tgz"
   "version" "4.10.1"
@@ -6178,6 +6225,11 @@
     "hash.js" "^1.0.3"
     "minimalistic-assert" "^1.0.0"
     "minimalistic-crypto-utils" "^1.0.1"
+
+"hoist-non-react-statics@^2.5.0":
+  "integrity" "sha512-rqcy4pJo55FTTLWt+bU8ukscqHeE/e9KWvsOW2b/a3afxQZhwkQdT1rPPCJ0rYXdj4vNcasY8zHTH+jF/qStxw=="
+  "resolved" "https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-2.5.5.tgz"
+  "version" "2.5.5"
 
 "hoist-non-react-statics@^3.1.0":
   "integrity" "sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw=="
@@ -6532,6 +6584,13 @@
     "get-intrinsic" "^1.1.0"
     "has" "^1.0.3"
     "side-channel" "^1.0.4"
+
+"invariant@^2.2.4":
+  "integrity" "sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA=="
+  "resolved" "https://registry.npmjs.org/invariant/-/invariant-2.2.4.tgz"
+  "version" "2.2.4"
+  dependencies:
+    "loose-envify" "^1.0.0"
 
 "ip-regex@^2.1.0":
   "integrity" "sha1-+ni/XS5pE8kRzp+BnuUUa7bYROk="
@@ -7787,7 +7846,7 @@
   "resolved" "https://registry.yarnpkg.com/loglevel/-/loglevel-1.7.1.tgz"
   "version" "1.7.1"
 
-"loose-envify@^1.1.0", "loose-envify@^1.2.0", "loose-envify@^1.3.1", "loose-envify@^1.4.0":
+"loose-envify@^1.0.0", "loose-envify@^1.1.0", "loose-envify@^1.2.0", "loose-envify@^1.3.1", "loose-envify@^1.4.0":
   "integrity" "sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q=="
   "resolved" "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz"
   "version" "1.4.0"
@@ -9753,7 +9812,7 @@
     "kleur" "^3.0.3"
     "sisteransi" "^1.0.5"
 
-"prop-types@^15.0.0", "prop-types@^15.6.2", "prop-types@^15.7.2":
+"prop-types@^15.0.0", "prop-types@^15.6.0", "prop-types@^15.6.1", "prop-types@^15.6.2", "prop-types@^15.7.2":
   "integrity" "sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ=="
   "resolved" "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz"
   "version" "15.7.2"
@@ -9973,6 +10032,16 @@
     "object-assign" "^4.1.1"
     "scheduler" "^0.20.2"
 
+"react-dom@^16.0.0":
+  "integrity" "sha512-1gCeQXDLoIqMgqD3IO2Ah9bnf0w9kzhwN5q4FGnHZ67hBm9yePzB5JJAIQCc8x3pFnNlwFq4RidZggNAAkzWWw=="
+  "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-16.14.0.tgz"
+  "version" "16.14.0"
+  dependencies:
+    "loose-envify" "^1.1.0"
+    "object-assign" "^4.1.1"
+    "prop-types" "^15.6.2"
+    "scheduler" "^0.19.1"
+
 "react-error-overlay@^6.0.9":
   "integrity" "sha512-nQTTcUu+ATDbrSD1BZHr5kgSD4oF8OFjxun8uAaL8RwPBacGBNPf/yAuVVdx17N8XNzRDMrZ9XcKZHCjPW+9ew=="
   "resolved" "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.9.tgz"
@@ -9984,6 +10053,15 @@
   "version" "6.0.0"
   dependencies:
     "throttle-debounce" "^2.1.0"
+
+"react-interactive@^0.8.1":
+  "integrity" "sha512-mmRvA9aKP7zu9kVfP1AX1egX8tFlnE3DDXq92z0JTZezfOpmeQBzr77O1+mTV54OOmn+M2t6c5kFD5VnuFoM7A=="
+  "resolved" "https://registry.npmjs.org/react-interactive/-/react-interactive-0.8.3.tgz"
+  "version" "0.8.3"
+  dependencies:
+    "detect-it" "^3.0.3"
+    "object-assign" "^4.1.1"
+    "prop-types" "^15.6.0"
 
 "react-is@^16.6.0", "react-is@^16.7.0", "react-is@^16.8.1":
   "integrity" "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
@@ -10005,6 +10083,18 @@
   "resolved" "https://registry.npmjs.org/react-responsive-masonry/-/react-responsive-masonry-2.1.1.tgz"
   "version" "2.1.1"
 
+"react-router-dom@^4.2.2":
+  "integrity" "sha512-c/MlywfxDdCp7EnB7YfPMOfMD3tOtIjrQlj/CKfNMBxdmpJP8xcz5P/UAFn3JbnQCNUxsHyVVqllF9LhgVyFCA=="
+  "resolved" "https://registry.npmjs.org/react-router-dom/-/react-router-dom-4.3.1.tgz"
+  "version" "4.3.1"
+  dependencies:
+    "history" "^4.7.2"
+    "invariant" "^2.2.4"
+    "loose-envify" "^1.3.1"
+    "prop-types" "^15.6.1"
+    "react-router" "^4.3.1"
+    "warning" "^4.0.1"
+
 "react-router-dom@^5.2.0":
   "integrity" "sha512-gxAmfylo2QUjcwxI63RhQ5G85Qqt4voZpUXSEqCwykV0baaOTQDR1f0PmY8AELqIyVc0NEZUj0Gov5lNGcXgsA=="
   "resolved" "https://registry.npmjs.org/react-router-dom/-/react-router-dom-5.2.0.tgz"
@@ -10017,6 +10107,19 @@
     "react-router" "5.2.0"
     "tiny-invariant" "^1.0.2"
     "tiny-warning" "^1.0.0"
+
+"react-router@^4.3.1":
+  "integrity" "sha512-yrvL8AogDh2X42Dt9iknk4wF4V8bWREPirFfS9gLU1huk6qK41sg7Z/1S81jjTrGHxa3B8R3J6xIkDAA6CVarg=="
+  "resolved" "https://registry.npmjs.org/react-router/-/react-router-4.3.1.tgz"
+  "version" "4.3.1"
+  dependencies:
+    "history" "^4.7.2"
+    "hoist-non-react-statics" "^2.5.0"
+    "invariant" "^2.2.4"
+    "loose-envify" "^1.3.1"
+    "path-to-regexp" "^1.7.0"
+    "prop-types" "^15.6.1"
+    "warning" "^4.0.1"
 
 "react-router@5.2.0":
   "integrity" "sha512-smz1DUuFHRKdcJC0jobGo8cVbhO3x50tCL4icacOlcwDOEQPq4TMqwx3sY1TP+DvtTgz4nm3thuo7A+BK2U0Dw=="
@@ -10107,6 +10210,15 @@
   dependencies:
     "loose-envify" "^1.1.0"
     "object-assign" "^4.1.1"
+
+"react@^16.0.0", "react@^16.14.0":
+  "integrity" "sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g=="
+  "resolved" "https://registry.npmjs.org/react/-/react-16.14.0.tgz"
+  "version" "16.14.0"
+  dependencies:
+    "loose-envify" "^1.1.0"
+    "object-assign" "^4.1.1"
+    "prop-types" "^15.6.2"
 
 "read-pkg-up@^2.0.0":
   "integrity" "sha1-a3KoBImE4MQeeVEP1en6mbO1Sb4="
@@ -10701,6 +10813,14 @@
   "version" "5.0.1"
   dependencies:
     "xmlchars" "^2.2.0"
+
+"scheduler@^0.19.1":
+  "integrity" "sha512-n/zwRWRYSUj0/3g/otKDRPMh6qv2SYMWNq85IEa8iZyAv8od9zDYpGSnpBEjNgcMNq6Scbu5KfIPxNF72R/2EA=="
+  "resolved" "https://registry.npmjs.org/scheduler/-/scheduler-0.19.1.tgz"
+  "version" "0.19.1"
+  dependencies:
+    "loose-envify" "^1.1.0"
+    "object-assign" "^4.1.1"
 
 "scheduler@^0.20.2":
   "integrity" "sha512-2eWfGgAqqWFGqtdMmcL5zCMK1U8KlXv8SQFGglL3CEtd0aDVDWgeF/YoCmvln55m5zSk3J/20hTaSBeSObsQDQ=="
@@ -12216,6 +12336,13 @@
   "version" "1.0.7"
   dependencies:
     "makeerror" "1.0.x"
+
+"warning@^4.0.1":
+  "integrity" "sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w=="
+  "resolved" "https://registry.npmjs.org/warning/-/warning-4.0.3.tgz"
+  "version" "4.0.3"
+  dependencies:
+    "loose-envify" "^1.0.0"
 
 "watchpack-chokidar2@^2.0.1":
   "integrity" "sha512-nCFfBIPKr5Sh61s4LPpy1Wtfi0HE8isJ3d2Yb5/Ppw2P2B/3eVSEBjKfN0fmHJSK14+31KwMKmcrzs2GM4P0Ww=="
