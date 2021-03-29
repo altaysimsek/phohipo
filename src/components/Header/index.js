@@ -20,7 +20,9 @@ function Header() {
   return (
     <div className="header">
       <div className="logo">
-        <img src="./logo.png" width="100px"></img>
+        <a href="/">
+          <img src="./logo.png" width="100px"></img>
+        </a>
       </div>
       <div className="search">
         <input
