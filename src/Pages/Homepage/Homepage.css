@@ -1,27 +1,52 @@
 .content {
   padding: 1rem 10%;
 }
-.welcomer{
-  background-image: linear-gradient(black, black),url('https://images.unsplash.com/photo-1616450030149-26a8bc9dd54f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80');
-  height:50vh;
-  background-position:center;
-  background-size:cover;
+.welcomer {
+  background-image: linear-gradient(black, black),
+    url('https://images.unsplash.com/photo-1616450030149-26a8bc9dd54f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80');
+  height: auto;
+  background-position: center;
+  background-size: cover;
   background-blend-mode: saturation;
-  
-  
-  color:white;
-  padding: 4% 50% 0% 10%;
+
+  color: white;
+  padding: 4% 50% 4% 10%;
 }
-.welcomer h1{
-  font-size:72px;
-  margin-bottom:3rem;
+.welcomer h1 {
+  font-size: 72px;
+  margin-bottom: 3rem;
 }
-.welcomer p{
-  font-size:16px;
-  font-weight:500;
+.welcomer p {
+  font-size: 16px;
+  font-weight: 500;
   line-height: 1.5;
-  color:rgba(255,255,255,.8)
 }
-.welcomer img{
-  
+.welcomer img {
+}
+
+.discoverButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 28px;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 18px;
+  color: #e11d39;
+  transition: all ease 0.12s;
+}
+.discoverButton:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #e11d39;
+}
+.arrowico {
+  fill: #e11d39;
+  margin-right: 10px;
+}
+.discoverButton:hover .arrowico {
+  fill: white;
 }
