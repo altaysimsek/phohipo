@@ -1,4 +1,5 @@
 import './Homepage.css'
+import { Link } from 'react-router-dom'
 
 function Homepage() {
   return (
@@ -14,9 +15,14 @@ function Homepage() {
           photography and want to explore photos taken in Istanbul. Then, he can type in `Istanbul`
           and select `Nature` from the dropdown to search Unsplash.
         </p>
-        <button className="discoverButton">
-          <box-icon name="right-arrow" class="arrowico"></box-icon>Discover
-        </button>
+
+        <Link to="/discover">
+          <button className="discoverButton">
+            <div className="centerialize">
+              <box-icon name="right-arrow" class="arrowico"></box-icon>Discover
+            </div>
+          </button>
+        </Link>
       </div>
     </div>
   )

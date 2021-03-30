@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+
 import './Search.css'
 
 function Search() {
@@ -10,6 +11,18 @@ function Search() {
   useEffect(() => {
     getTopics()
   }, [])
+
+  function handleClick() {
+    // const params = new URLSearchParams(window.location.search)
+    // console.log(params.get('query'), params.get('topics'))
+    window.location = `/search${
+      inputValue && optionSelect
+        ? '?query=' + inputValue + '&topic=' + optionSelect
+        : inputValue
+        ? '?query=' + inputValue
+        : ''
+    }`
+  }
 
   const getTopics = () => {
     axios
@@ -22,7 +35,7 @@ function Search() {
   return (
     <div className="search">
       <select className="customSelect" onChange={(e) => setOptionSelect(e.target.value)}>
-        <option default  value="null">
+        <option default value="null">
           Select a topic
         </option>
         {topics.map((item) => (
@@ -36,7 +49,9 @@ function Search() {
         placeholder="Type your interest"
         onChange={(e) => setInputValue(e.target.value)}
       ></input>
-      <box-icon class="icon" name="search" color="rgba(0,0,0,0.6)"></box-icon>
+      <box-icon class="icon" name="search" color="rgba(0,0,0,0.6)" onClick={handleClick}>
+        {' '}
+      </box-icon>
     </div>
   )
 }
