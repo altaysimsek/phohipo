@@ -24,7 +24,7 @@ function Homepage() {
           setImages(images.concat(...response.data))
         })
         .catch((err) => console.log(err))
-    }, 1250)
+    }, 10000)
   }
 
   return (
@@ -34,7 +34,28 @@ function Homepage() {
           dataLength={images.length}
           next={fetchPhotos}
           hasMore={true}
-          loader={<h4>Loading...</h4>}
+          loader={
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                flexDirection: 'column',
+                alignItems: 'center',
+                height: '20vh',
+                fontWeight: '600',
+                color: 'rgba(0,0,0,.45)',
+                fontSize: '24px'
+              }}
+            >
+              <box-icon
+                name="meteor"
+                animation="tada"
+                color="rgba(0,0,0,0.45)"
+                style={{ width: '64px', height: '64px' }}
+              ></box-icon>
+              Photos are falling
+            </div>
+          }
           endMessage={
             <p style={{ textAlign: 'center' }}>
               <b>Yay! You have seen it all</b>
