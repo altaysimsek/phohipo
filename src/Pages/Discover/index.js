@@ -18,13 +18,13 @@ function Homepage() {
     setTimeout(() => {
       axios
         .get(
-          `https://api.unsplash.com/photos/random?count=10&client_id=${process.env.REACT_APP_TOKEN}`
+          `https://api.unsplash.com/photos/random?count=9&client_id=${process.env.REACT_APP_TOKEN}`
         )
         .then((response) => {
           setImages(images.concat(...response.data))
         })
         .catch((err) => console.log(err))
-    }, 5000)
+    }, 1250)
   }
 
   return (

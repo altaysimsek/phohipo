@@ -20,6 +20,8 @@ function Search() {
         ? '?query=' + inputValue + '&topic=' + optionSelect
         : inputValue
         ? '?query=' + inputValue
+        : optionSelect
+        ? '?topic=' + optionSelect
         : ''
     }`
   }
@@ -48,6 +50,7 @@ function Search() {
         className="customInput"
         placeholder="Type your interest"
         onChange={(e) => setInputValue(e.target.value)}
+        onKeyPress={(e) => (e.key === 'Enter' ? handleClick() : false)}
       ></input>
       <box-icon class="icon" name="search" color="rgba(0,0,0,0.6)" onClick={handleClick}>
         {' '}
