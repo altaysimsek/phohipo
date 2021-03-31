@@ -10,12 +10,12 @@ function SearchPage() {
   const [pageCount, setPageCount] = useState(1)
   const [activePage, setActivePage] = useState(1)
   const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
   const params = new URLSearchParams(window.location.search)
   const query = params.get('query')
   const topic = params.get('topic')
 
   const handlePageClick = (data) => {
-    console.log(data)
     setActivePage(data.selected + 1)
   }
 
@@ -46,21 +46,22 @@ function SearchPage() {
   }
   const fetchPhotos = () => {
     setLoading(true)
+    setError('')
     const url = generateUrl(activePage)
     console.log(url)
     setTimeout(() => {
       axios
         .get(url)
         .then((response) => {
-          setLoading(false)
           if (response.data.results) {
             setImages(response.data.results)
             setPageCount(response.data.total_pages)
           } else {
             setImages(response.data)
           }
+          setLoading(false)
         })
-        .catch((err) => console.log(err))
+        .catch((err) => setError(err.message))
     }, 5000)
   }
   return (
@@ -68,15 +69,64 @@ function SearchPage() {
       {validateQueries(query, topic) ? (
         <div>
           {!loading ? (
-            <div>
-              <ResponsiveMasonry columnsCount={3} gutter="10px">
-                <Masonry>
-                  {images.map((image) => (
-                    <ImageCard key={image.id} imageData={image}></ImageCard>
-                  ))}
-                </Masonry>
-              </ResponsiveMasonry>
-            </div>
+            !error ? (
+              <div>
+                {images.length > 0 ? (
+                  <div>
+                    <ResponsiveMasonry columnsCount={3} gutter="10px">
+                      <Masonry>
+                        {images.map((image) => (
+                          <ImageCard key={image.id} imageData={image}></ImageCard>
+                        ))}
+                      </Masonry>
+                    </ResponsiveMasonry>
+                  </div>
+                ) : (
+                  <div
+                    style={{
+                      display: 'flex',
+                      justifyContent: 'center',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      height: '20vh',
+                      fontWeight: '600',
+                      color: 'rgba(0,0,0,.45)',
+                      fontSize: '24px'
+                    }}
+                  >
+                    <box-icon
+                      name="sad"
+                      animation="tada"
+                      color="rgba(10,6,161,0.6)"
+                      style={{ width: '64px', height: '64px' }}
+                    ></box-icon>
+                    I couldn't find anything to show
+                  </div>
+                )}
+              </div>
+            ) : (
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'center',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  height: '20vh',
+                  fontWeight: '600',
+                  color: 'rgba(0,0,0,.45)',
+                  fontSize: '24px'
+                }}
+              >
+                <box-icon
+                  name="error"
+                  animation="tada"
+                  color="rgba(255,0,0,0.45)"
+                  style={{ width: '64px', height: '64px' }}
+                ></box-icon>
+                Something went wrong
+                <p>{error}</p>
+              </div>
+            )
           ) : (
             <div
               style={{

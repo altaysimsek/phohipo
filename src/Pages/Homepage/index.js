@@ -1,5 +1,6 @@
 import './Homepage.css'
 import { Link } from 'react-router-dom'
+import { Search } from '../../components'
 
 function Homepage() {
   return (
@@ -23,6 +24,12 @@ function Homepage() {
             </div>
           </button>
         </Link>
+      </div>
+      <div className="searchbanner">
+        <h2 style={{ marginBottom: '2rem', marginTop: '3rem' }}>
+          <span style={{ color: '#e11d39' }}>Search</span> by topic & keyword
+        </h2>
+        <Search></Search>
       </div>
     </div>
   )

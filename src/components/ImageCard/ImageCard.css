@@ -19,17 +19,33 @@
   background-color: rgba(245, 245, 245, 1);
   bottom: 20px;
   left: 20px;
-  transition: all 0.18s;
+  transition: all 0.38s;
 }
+
+.icon {
+  fill: #e11d39;
+}
+
 .iconBox:hover {
   cursor: pointer;
-  background-color: #E11D39;
+  background-color: rgb(240, 240, 240);
 }
-.iconBox:hover .icon {
-  fill: white !important;
-}
-.icon {
-  fill: #E11D39;
-}
+
 .iconactive {
+  position: absolute;
+  padding: 10px 10px 5px 10px;
+  z-index: 99;
+  border-radius: 50%;
+  background-color: #e11d39;
+  bottom: 20px;
+  left: 20px;
+  transition: all 0.38s;
+}
+.iconactive .icon {
+  fill: white;
+}
+
+.iconactive:hover {
+  cursor: pointer;
+  background-color: #bb1931;
 }
