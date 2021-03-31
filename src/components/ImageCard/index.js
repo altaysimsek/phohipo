@@ -5,7 +5,7 @@ import './ImageCard.css'
 
 function ImageCard({ imageData }) {
   const [isFavorite, setFavorite] = useState(false)
-  const { favoritePhoto, addFavoritePhoto, removeFavoritePhoto } = useContext(PhotoContext)
+  const { addFavoritePhoto, removeFavoritePhoto } = useContext(PhotoContext)
 
   const toggleFavoritePhoto = () => {
     if (isFavorite) {
@@ -16,13 +16,30 @@ function ImageCard({ imageData }) {
       setFavorite(true)
     }
   }
+  // We are using useEffect for marking favorite movies
   useEffect(() => {
-    if (favoritePhoto.includes(imageData.id)) {
+    const data = JSON.parse(localStorage.getItem('favoritePhotos'))
+    const item = data.filter((item) => item.id === imageData.id)
+    if (item.length !== 0) {
       setFavorite(true)
     } else {
       setFavorite(false)
     }
+    // eslint-disable-next-line
   }, [])
+
+  // Is the favorite state changed uptade the local favorite state
+  useEffect(() => {
+    const data = JSON.parse(localStorage.getItem('favoritePhotos'))
+    const item = data.filter((item) => item.id === imageData.id)
+    if (item.length !== 0) {
+      setFavorite(true)
+    } else {
+      setFavorite(false)
+    }
+    // eslint-disable-next-line
+  }, [isFavorite])
+
   return (
     <div className="imageCard">
       <div className={isFavorite ? 'iconactive' : 'iconBox'} onClick={toggleFavoritePhoto}>

@@ -17,17 +17,17 @@ function Homepage() {
           and select `Nature` from the dropdown to search Unsplash.
         </p>
 
-        <Link to="/discover">
+        <Link to="/explore">
           <button className="discoverButton">
             <div className="centerialize">
-              <box-icon name="right-arrow" class="arrowico"></box-icon>Discover
+              <box-icon name="right-arrow" class="arrowico"></box-icon>Explore
             </div>
           </button>
         </Link>
       </div>
       <div className="searchbanner">
         <h2 style={{ marginBottom: '2rem', marginTop: '3rem' }}>
-          <span style={{ color: '#e11d39' }}>Search</span> by topic & keyword
+          <span style={{ color: '#e11d39' }}>Search</span> by topic or keyword
         </h2>
         <Search></Search>
       </div>

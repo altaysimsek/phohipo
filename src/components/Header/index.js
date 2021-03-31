@@ -15,7 +15,7 @@ function Header() {
               <a href="/">Homepage</a>
             </ul>
             <ul>
-              <a href="/discover">Discover</a>
+              <a href="/explore">Explore</a>
             </ul>
             <ul>
               <a href="/favorites">Favorites</a>
