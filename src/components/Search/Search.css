@@ -25,3 +25,6 @@
   border: none;
   outline: none;
 }
+option {
+  border-radius: 50%px;
+}

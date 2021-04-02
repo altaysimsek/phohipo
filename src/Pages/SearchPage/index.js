@@ -27,6 +27,7 @@ function SearchPage() {
     //eslint-disable-next-line
     [activePage]
   )
+
   const validateQueries = (query, topic) => {
     if (query || topic) {
       return true
@@ -37,9 +38,9 @@ function SearchPage() {
     if (query && !topic) {
       return `https://api.unsplash.com/search/photos?query=${query}&page=${page}&per_page=7&client_id=${process.env.REACT_APP_TOKEN}`
     } else if (topic && !query) {
-      return `https://api.unsplash.com/topics/${topic}/photos?per_page=18&client_id=${process.env.REACT_APP_TOKEN}`
+      return `https://api.unsplash.com/collections/${topic}/photos?per_page=9&client_id=${process.env.REACT_APP_TOKEN}`
     } else if (topic && query) {
-      return `https://api.unsplash.com/search/photos?query=${query}&page=${page}&per_page=9&client_id=${process.env.REACT_APP_TOKEN}`
+      return `https://api.unsplash.com/search/photos?query=${query}&collections=${topic}&page=${page}&per_page=9&client_id=${process.env.REACT_APP_TOKEN}`
     } else {
       return false
     }

@@ -49,7 +49,10 @@ function Favorites() {
               color="rgba(10,6,161,0.6)"
               style={{ width: '64px', height: '64px' }}
             ></box-icon>
-            Nothing to see here
+            Nothing to see here <br></br>
+            <span style={{ fontSize: '14px' }}>
+              You can add your favorite photos by clicking the heart on it.
+            </span>
           </div>
         )}
       </div>

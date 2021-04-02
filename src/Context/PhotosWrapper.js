@@ -12,6 +12,7 @@ export default function PhotoProvider({ children }) {
     data.push(object)
     localStorage.setItem('favoritePhotos', JSON.stringify(data))
   }
+
   // Removing movie to global FavoritePhoto state and localStorage
   const removeFavoritePhoto = async (photoID) => {
     const newMovie = favoritePhoto.filter((photo) => photo.id !== photoID)
@@ -28,6 +29,7 @@ export default function PhotoProvider({ children }) {
       localStorage.setItem('favoritePhotos', JSON.stringify([]))
     }
   }, [])
+
   return (
     <PhotosContext.Provider value={{ favoritePhoto, addFavoritePhoto, removeFavoritePhoto }}>
       {children}

@@ -1,20 +1,56 @@
-import { useState, useEffect } from 'react'
-import axios from 'axios'
+import { useState } from 'react'
+
+import CustomDropdown from '../CustomDropdown'
 
 import './Search.css'
+const menu = [
+  {
+    value: 9568384,
+    label: 'Patient'
+  },
+  {
+    value: 1971015,
+    label: 'Simplicity'
+  },
+  {
+    value: 1020971,
+    label: 'Halloween'
+  },
+  {
+    value: 9717149,
+    label: 'Covid19'
+  },
+  {
+    value: 762960,
+    label: 'Dark and Moody'
+  },
+  {
+    value: 209138,
+    label: 'Earth Tones'
+  },
+  {
+    value: 209138,
+    label: 'Happiness'
+  },
+  {
+    value: 9248817,
+    label: 'Watercolour'
+  },
+  {
+    value: 433313,
+    label: 'Holiday Mood'
+  },
+  {
+    value: 219941,
+    label: 'Architecture,Buildings'
+  }
+]
 
 function Search() {
   const [inputValue, setInputValue] = useState('')
   const [optionSelect, setOptionSelect] = useState(null)
-  const [topics, setTopics] = useState([])
-
-  useEffect(() => {
-    getTopics()
-  }, [])
 
   function handleClick() {
-    // const params = new URLSearchParams(window.location.search)
-    // console.log(params.get('query'), params.get('topics'))
     window.location = `/search${
       inputValue && optionSelect
         ? '?query=' + inputValue + '&topic=' + optionSelect
@@ -25,27 +61,11 @@ function Search() {
         : ''
     }`
   }
-
-  const getTopics = () => {
-    axios
-      .get(`https://api.unsplash.com/topics?client_id=${process.env.REACT_APP_TOKEN}`)
-      .then((response) => {
-        setTopics(response.data)
-      })
-      .catch((err) => console.log(err))
-  }
+  //<Select onChange={(e) => setOptionSelect(e.value)} options={options} />
   return (
     <div className="search">
-      <select className="customSelect" onChange={(e) => setOptionSelect(e.target.value)}>
-        <option default value="null">
-          Select a topic
-        </option>
-        {topics.map((item) => (
-          <option key={item.id} value={item.slug}>
-            {item.title}
-          </option>
-        ))}
-      </select>
+      <CustomDropdown options={menu} getValue={(val) => setOptionSelect(val)}></CustomDropdown>
+
       <input
         className="customInput"
         placeholder="Type your interest"
