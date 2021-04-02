@@ -50,6 +50,7 @@ function Search() {
   const [inputValue, setInputValue] = useState('')
   const [optionSelect, setOptionSelect] = useState(null)
 
+  //window.location is not recommended but we use this here because the router doesn't wrap the header component.
   function handleClick() {
     window.location = `/search${
       inputValue && optionSelect
@@ -61,7 +62,7 @@ function Search() {
         : ''
     }`
   }
-  //<Select onChange={(e) => setOptionSelect(e.value)} options={options} />
+
   return (
     <div className="search">
       <CustomDropdown options={menu} getValue={(val) => setOptionSelect(val)}></CustomDropdown>

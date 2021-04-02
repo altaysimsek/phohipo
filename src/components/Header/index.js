@@ -4,7 +4,7 @@ import Searchbar from '../Search'
 
 function Header() {
   return (
-    <navbar className="header">
+    <div className="header">
       <div className="logo">
         <a href="/" style={{ marginRight: '2rem' }}>
           <img src={process.env.PUBLIC_URL + 'logo.png'} alt="phohipo logo" width="75px"></img>
@@ -25,7 +25,7 @@ function Header() {
       </div>
 
       <Searchbar></Searchbar>
-    </navbar>
+    </div>
   )
 }
 

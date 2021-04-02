@@ -25,14 +25,35 @@ code {
     display: none !important;
   }
 }
-@media screen and (max-width: 456px) {
+@media screen and (max-width: 500px) {
   .header img {
     display: none !important;
     min-height: 81px !important;
+  }
+  .welcomer {
+    padding: 4% 10% !important;
+  }
+  .welcomer h1 {
+    font-size: 64px !important;
   }
   .header {
     height: 81px;
     padding-left: 0 !important;
     padding-right: 0 !important;
+  }
+  .search {
+    flex-direction: column;
+  }
+  .search .customInput {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .navbarlist li ul {
+    margin-right: 1rem !important;
   }
 }

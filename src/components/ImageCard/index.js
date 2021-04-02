@@ -16,7 +16,7 @@ function ImageCard({ imageData }) {
       setFavorite(true)
     }
   }
-  // We are using useEffect for marking favorite movies
+  // We are using useEffect for marking favorite photos for the first time.
   useEffect(() => {
     const data = JSON.parse(localStorage.getItem('favoritePhotos'))
     const item = data.filter((item) => item.id === imageData.id)
@@ -28,7 +28,7 @@ function ImageCard({ imageData }) {
     // eslint-disable-next-line
   }, [])
 
-  // Is the favorite state changed uptade the local favorite state
+  // Also we need to check when the favorite status is changed
   useEffect(() => {
     const data = JSON.parse(localStorage.getItem('favoritePhotos'))
     const item = data.filter((item) => item.id === imageData.id)

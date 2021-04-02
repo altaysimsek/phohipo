@@ -5,6 +5,7 @@ function CustomDropdown({ options, getValue }) {
   const [visible, setVisible] = useState(false)
   const [title, setTitle] = useState('Select a collection')
   return (
+    //components needs a wrapper
     <div>
       <button className="dropdown-button" onClick={(e) => setVisible(!visible)}>
         <span style={{ marginRight: 'auto' }}>{title}</span>
