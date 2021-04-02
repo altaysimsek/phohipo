@@ -26,17 +26,17 @@
 
 .navbarlist li ul {
   margin-right: 2rem;
-  color: #E11D39;
+  color: #e11d39;
 }
 .navbarlist li ul a {
   text-decoration: none;
-  font-weight:700;
-  color: #E11D39;
+  font-weight: 700;
+  color: #e11d39;
   transition: all ease 0.1s;
 }
 .navbarlist li ul a:visited {
   text-decoration: none;
-  color: #E11D39;
+  color: #e11d39;
 }
 .navbarlist li ul a:hover {
   color: black;

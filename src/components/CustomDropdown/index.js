@@ -8,7 +8,9 @@ function CustomDropdown({ options, getValue }) {
     <div>
       <button className="dropdown-button" onClick={(e) => setVisible(!visible)}>
         <span style={{ marginRight: 'auto' }}>{title}</span>
-        <box-icon name="down-arrow" color="rgba(0,0,0,0.6)"></box-icon>
+        <box-icon name="down-arrow" type="solid" color="rgba(0,0,0,0.6)" size="xs">
+          {' '}
+        </box-icon>
       </button>
       <div className="custom-dropdown" style={{ display: visible ? 'flex' : 'none' }}>
         {options.map((item, index) => (

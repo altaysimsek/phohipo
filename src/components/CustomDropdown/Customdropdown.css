@@ -17,15 +17,12 @@
   border: none;
   outline: none;
   background-color: #f0f0f0;
-  margin-right: 10px;
+  margin-right: 20px;
   color: black;
   font-weight: 600;
   font-size: 14px;
 }
-.dropdown-button svg {
-  width: 16px !important;
-  height: 16px !important;
-}
+
 .custom-dropdown-item {
   margin-bottom: 5px;
   padding: 0.5rem 1rem;

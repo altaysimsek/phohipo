@@ -16,3 +16,23 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+.content {
+  color: rgba(0, 0, 0, 0.6);
+  padding: 0 15%;
+}
+@media screen and (max-width: 952px) {
+  .header .search {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 456px) {
+  .header img {
+    display: none !important;
+    min-height: 81px !important;
+  }
+  .header {
+    height: 81px;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}

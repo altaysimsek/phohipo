@@ -66,7 +66,7 @@ function SearchPage() {
     }, 5000)
   }
   return (
-    <div>
+    <div className="content">
       {validateQueries(query, topic) ? (
         <div>
           {!loading ? (
