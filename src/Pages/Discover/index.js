@@ -26,7 +26,7 @@ function Homepage() {
           setImages(images.concat(...response.data))
         })
         .catch((err) => setError(err.message))
-    }, 10000)
+    }, 2000)
   }
 
   return (

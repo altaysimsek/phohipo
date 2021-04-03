@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Routers, Route, Switch } from 'react-router-dom'
-import { Homepage, Discover, SearchPage, Favorites } from './Pages/'
+import { Homepage, Discover, SearchPage, Favorites, Page404 } from './Pages/'
 
 const Router = () => {
   return (
@@ -10,6 +10,7 @@ const Router = () => {
         <Route exact path="/explore" component={Discover} />
         <Route exact path="/favorites" component={Favorites} />
         <Route path="/search" component={SearchPage} />
+        <Route component={Page404} />
       </Switch>
     </Routers>
   )

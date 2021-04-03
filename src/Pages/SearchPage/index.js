@@ -64,7 +64,7 @@ function SearchPage() {
           setLoading(false)
         })
         .catch((err) => setError(err.message))
-    }, 5000)
+    }, 2000)
   }
   return (
     <div className="content">
