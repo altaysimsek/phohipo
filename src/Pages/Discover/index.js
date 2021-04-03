@@ -20,7 +20,7 @@ function Homepage() {
     setTimeout(() => {
       axios
         .get(
-          `https://api.unsplash.com/photos/random?count=9&client_id=ss${process.env.REACT_APP_TOKEN}`
+          `https://api.unsplash.com/photos/random?count=9&client_id=${process.env.REACT_APP_TOKEN}`
         )
         .then((response) => {
           setImages(images.concat(...response.data))
