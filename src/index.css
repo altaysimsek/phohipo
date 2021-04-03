@@ -26,6 +26,12 @@ code {
   }
 }
 @media screen and (max-width: 500px) {
+  .pagination {
+    font-size: 12px !important;
+  }
+  .content {
+    padding: 0 !important;
+  }
   .header img {
     display: none !important;
     min-height: 81px !important;
@@ -40,6 +46,7 @@ code {
     height: 81px;
     padding-left: 0 !important;
     padding-right: 0 !important;
+    justify-content: center !important;
   }
   .search {
     flex-direction: column;
