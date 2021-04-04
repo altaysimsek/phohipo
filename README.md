@@ -17,6 +17,7 @@ It's a custom client for unsplash also case from Hipo labs. I thought this proje
 ## ⚠️Warning
 All the fetches have a timeout because of the api limit.
 I can't use the router's hook on header component because the router doesn't wrap my header component.
+Also, I tried to make masonry with pure CSS but I have a problem re-render and re-ordering when newer photos come so I used a package for this.
 
 
 ## Getting Started
