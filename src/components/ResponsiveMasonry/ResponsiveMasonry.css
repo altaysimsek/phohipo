@@ -2,6 +2,9 @@
   column-count: 3;
   padding: 1rem;
 }
+.masonry > * {
+  break-inside: avoid;
+}
 
 @media screen and (max-width: 1024px) {
   .masonry {
