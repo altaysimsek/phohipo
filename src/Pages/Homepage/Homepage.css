@@ -9,6 +9,9 @@
   color: white;
   padding: 4% 50% 4% 10%;
 }
+.banner {
+  margin-top: 80px;
+}
 .welcomer h1 {
   font-size: 72px;
   margin-bottom: 3rem;

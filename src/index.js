@@ -9,7 +9,7 @@ import PhotoProvider from './Context/PhotosWrapper'
 ReactDOM.render(
   <PhotoProvider>
     <Header></Header>
-    <Router></Router>
+    <Router style={{ marginTop: '80px' }}></Router>
   </PhotoProvider>,
   document.getElementById('root')
 )

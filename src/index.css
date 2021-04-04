@@ -19,6 +19,7 @@ code {
 .content {
   color: rgba(0, 0, 0, 0.6);
   padding: 0 15%;
+  margin-top: 80px;
 }
 @media screen and (max-width: 952px) {
   .header .search {
