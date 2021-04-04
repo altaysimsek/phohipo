@@ -1,0 +1,18 @@
+.masonry {
+  column-count: 3;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+@media screen and (max-width: 542px) {
+  .masonry {
+    column-count: 1;
+  }
+  .content {
+    padding: 0 !important;
+  }
+}

@@ -17,7 +17,7 @@
   z-index: 99;
   border-radius: 50%;
   background-color: rgba(245, 245, 245, 1);
-  bottom: 20px;
+  top: 20px;
   left: 20px;
   transition: all 0.38s;
 }
