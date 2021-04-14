@@ -1,6 +1,7 @@
 import './Header.css'
 
 import Searchbar from '../Search'
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
@@ -12,13 +13,13 @@ function Header() {
         <div className="navbarlist">
           <ul>
             <li>
-              <a href="/">Homepage</a>
+              <Link to="/">Homepage</Link>
             </li>
             <li>
-              <a href="/explore">Explore</a>
+              <Link to="/explore">Explore</Link>
             </li>
             <li>
-              <a href="/favorites">Favorites</a>
+              <Link to="/favorites">Favorites</Link>
             </li>
           </ul>
         </div>
