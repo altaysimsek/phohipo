@@ -52,7 +52,6 @@ function ImageCard({ imageData }) {
           alt={imageData.alt_description}
         ></img>
       </a>
-      <span class="skeleton-box" style={{ width: 'auto', height: 'auto' }}></span>
     </div>
   )
 }

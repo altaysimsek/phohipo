@@ -10,17 +10,17 @@ function Header() {
           <img src={process.env.PUBLIC_URL + 'logo.png'} alt="phohipo logo" width="75px"></img>
         </a>
         <div className="navbarlist">
-          <li>
-            <ul>
+          <ul>
+            <li>
               <a href="/">Homepage</a>
-            </ul>
-            <ul>
+            </li>
+            <li>
               <a href="/explore">Explore</a>
-            </ul>
-            <ul>
+            </li>
+            <li>
               <a href="/favorites">Favorites</a>
-            </ul>
-          </li>
+            </li>
+          </ul>
         </div>
       </div>
 

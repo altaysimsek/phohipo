@@ -20,28 +20,28 @@
   align-items: center;
 }
 
-.navbarlist li {
+.navbarlist ul {
   list-style-type: none;
   display: flex;
   font-weight: 600;
   font-size: 16px;
 }
 
-.navbarlist li ul {
+.navbarlist ul li {
   margin-right: 2rem;
   color: #e11d39;
 }
-.navbarlist li ul a {
+.navbarlist ul li a {
   text-decoration: none;
   font-weight: 700;
   color: #e11d39;
   transition: all ease 0.1s;
 }
-.navbarlist li ul a:visited {
+.navbarlist ul li a:visited {
   text-decoration: none;
   color: #e11d39;
 }
-.navbarlist li ul a:hover {
+.navbarlist ul li a:hover {
   color: black;
   cursor: pointer;
 }
