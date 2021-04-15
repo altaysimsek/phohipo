@@ -67,7 +67,7 @@ function SearchPage() {
     }, 2000)
   }
   return (
-    <div className="content">
+    <section className="content">
       {validateQueries(query, topic) ? (
         <>
           {!loading ? (
@@ -125,7 +125,7 @@ function SearchPage() {
           text="Plese enter keyword or select topic."
         ></ErrorBox>
       )}
-    </div>
+    </section>
   )
 }
 

@@ -20,7 +20,7 @@ function Favorites() {
   }, [favoritePhoto])
 
   return (
-    <div className="content">
+    <section className="content">
       {images.length > 0 ? (
         <ResponsiveMasonry columnsCount={3} gutter="10px">
           <Masonry>
@@ -32,7 +32,7 @@ function Favorites() {
       ) : (
         <ErrorBox iconName="sad" color="rgba(10,6,161,0.6)" text="Nothing to see here"></ErrorBox>
       )}
-    </div>
+    </section>
   )
 }
 

@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom'
 
 function Header() {
   return (
-    <div className="header">
+    <header className="header">
       <div className="logo">
         <a href="/" style={{ marginRight: '2rem' }}>
           <img src={process.env.PUBLIC_URL + 'logo.png'} alt="phohipo logo" width="75px"></img>
         </a>
-        <div className="navbarlist">
+        <nav className="navbarlist">
           <ul>
             <li>
               <Link to="/">Homepage</Link>
@@ -22,11 +22,11 @@ function Header() {
               <Link to="/favorites">Favorites</Link>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
 
       <Searchbar></Searchbar>
-    </div>
+    </header>
   )
 }
 

@@ -30,7 +30,7 @@ function Homepage() {
   }
 
   return (
-    <div className="content">
+    <section className="content">
       {!error ? (
         <InfiniteScroll
           dataLength={images.length}
@@ -64,7 +64,7 @@ function Homepage() {
           color="rgba(255,0,0,0.45)"
         ></ErrorBox>
       )}
-    </div>
+    </section>
   )
 }
 

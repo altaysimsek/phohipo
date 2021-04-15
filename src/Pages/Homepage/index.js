@@ -4,7 +4,7 @@ import { Search } from '../../components'
 
 function Homepage() {
   return (
-    <div className="banner">
+    <section className="banner">
       <div className="welcomer">
         <img src="./hipologo.png" width="50px" alt="hipologo"></img>
         <h1>
@@ -31,7 +31,7 @@ function Homepage() {
         </h2>
         <Search></Search>
       </div>
-    </div>
+    </section>
   )
 }
 
